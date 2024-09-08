@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background: url('site2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgba(9, 15, 31, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #2fbbf7;
+}
+
+.countdown-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: 0;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.box {
+    background-color: #090f1f;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+    width: 170px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 3px 8px rgba(47, 187, 247, 0.4);
+}
+
+.number {
+    font-size: 3rem;
+    color: #2fbbf7;
+    display: block;
+}
+
+.label {
+    font-size: 1rem;
+    color: 0;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: 0;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.social-media-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: 0;
+}
+
+.social-media-section p {
+    font-size: 1.1rem;
+    color: #2fbbf7;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    background-color: #090f1f;
+    padding: 20px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    box-shadow: 0 3px 8px rgba(47, 187, 247, 0.4);
+}
+
+.social-links a:hover {
+    background-color: #2fbbf7;
+}
+
+@media (max-width: 768px) {
+    #countdown {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box {
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-links a {
+        margin-bottom: 10px;
+    }
+}
