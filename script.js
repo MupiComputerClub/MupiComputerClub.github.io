@@ -1,5 +1,5 @@
 // Set the date for recruitment start
-const countdownDate = new Date("Sep 11, 2024 08:30:00").getTime();
+const countdownDate = new Date("Sep 15, 2024 16:00:00").getTime();
 
 // Update the countdown every second
 const x = setInterval(function() {
